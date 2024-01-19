@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulado</title>
+  <style>
+   
+    body {
+   
+      font-family: Arial, sans-serif;
+      background-color: #a7c2dd;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    h1 {
+        text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="radio"] {
+      margin-bottom: 10px;
+    }
+    button {
+      background-color: #385a7c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+      text-align: center;
+    }
+    #pergunta1, #pergunta2, #pergunta3, #pergunta4, #pergunta5, #pergunta6, #pergunta7, #pergunta8, #pergunta9, #pergunta10, #pergunta11, #pergunta12, #pergunta13, #pergunta14, #pergunta15, #pergunta16, #pergunta17, #pergunta18, #pergunta19, #pergunta20{
+       
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: rgba(255, 255, 255, 0.83);
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .resultado {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    .resposta-correta {
+      color: rgb(22, 205, 129);
+    }
+    .resposta-incorreta {
+      color: rgb(255, 66, 66);
+    }
+    #ir {
+        margin-left: 40%;
+        margin-top: 3%;
+        margin-bottom: 5%;
+        width: 150px;
+        height: 60px;
+        font-size: 20px;
+       
+    }
+  </style>
+</head>
+<body>
+ 
+  <form id="myForm">
+    <h1>Interpretação de texto</h1>
+    <div id="pergunta1">
+      <label data-resposta-correta="c">1. (Enem 2013) Tudo no mundo começou com um sim.
+        Uma molécula disse sim a outra molécula e nasceu a vida.
+        Mas antes da pré-história havia a pré-história da pré-
+        história e havia o nunca e havia o sim. Sempre houve. Não
+        sei o quê, mas sei que o universo jamais começou.<br>
+        […]<br>
+        Enquanto eu tiver perguntas e não houver respostas
+        continuarei a escrever. Como começar pelo início, se as
+        coisas acontecem antes de acontecer? Se antes da pré-pré-
+        história já havia os monstros apocalípticos? Se esta história
+        não existe, passará a existir. Pensar é um ato. Sentir é um
+        fato. Os dois juntos — sou eu que escrevo o que estou
+        escrevendo. […] Felicidade? Nunca vi palavra mais doida,
+        inventada pelas nordestinas que andam por aí aos montes.
+        Como eu irei dizer agora, esta história será o resultado de
+        uma visão gradual — há dois anos e meio venho aos poucos
+        descobrindo os porquês. É visão da iminência de. De quê?
+        Quem sabe se mais tarde saberei. Como que estou
+        escrevendo na hora mesma em que sou lido. Só não inicio
+        pelo fim que justificaria o começo — como a morte parece
+        dizer sobre a vida — porque preciso registrar os fatos
+        antecedentes.<br>
+        LISPECTOR, C. A hora da estrela. Rio de Janeiro: Rocco,
+        1988 (fragmento). <br>
+        A elaboração de uma voz narrativa peculiar acompanha a
+        trajetória literária de Clarice Lispector, culminada com a
+        obra A hora da estrela, de 1977, ano da morte da escritora.
+        Nesse fragmento, nota-se essa peculiaridade porque o
+        narrador </label>
+        
+              <label for="a1"><input type="radio" id="a1" name="resposta1" value="a">a) observa os acontecimentos que narra sob uma ótica
+        distante, sendo indiferente aos fatos e às personagens.</label>
+        
+              <label for="b1"><input type="radio" id="b1" name="resposta1" value="b">b) relata a história sem ter tido a preocupação de investigar
+        os motivos que levaram aos eventos que a compõem.</label>
+        
+              <label for="c1"><input type="radio" id="c1" name="resposta1" value="c">c) revela-se um sujeito que reflete sobre questões
+        existenciais e sobre a construção do discurso.</label>
+        
+              <label for="d1"><input type="radio" id="d1" name="resposta1" value="d">d) admite a dificuldade de escrever uma história em razão
+        da complexidade para escolher as palavras exatas.</label>
+        
+              <label for="e1"><input type="radio" id="e1" name="resposta1" value="e">e) propõe-se a discutir questões de natureza filosófica e
+        metafísica, incomuns na narrativa de ficção.</label>
+        
+              <div class="resultado" id="resultado1"></div>
+        
+              <button type="button" onclick="verificarRespostasIndividual(1, 'c')">Verificar Resposta</button>
+        
+            </div>
+
+ 
+
+    <div id="pergunta2">
+
+   <label data-resposta-correta="e">2. (Enem 2013) Manta que costura causos e histórias no
+    seio de uma família serve de metáfora da memória em
+    obra escrita por autora portuguesa<\br>
+    O que poderia valer mais do que a manta para
+    aquela família? Quadros de pintores famosos? Joias de rainha? Palácios? Uma manta feita de centenas de retalhos
+    de roupas velhas aquecia os pés das crianças e a memória
+    da avó, que a cada quadrado apontado por seus netos
+    resgatava de suas lembranças uma história. Histórias
+    fantasiosas como a do vestido com um bolso que abrigava
+    um gnomo comedor de biscoitos; histórias de traquinagem
+    como a do calção transformado em farrapos no dia em que
+    o menino, que gostava de andar de bicicleta de olhos
+    fechados, quebrou o braço; histórias de saudades, como o
+    avental que carregou uma carta por mais de um mês...
+    Muitas histórias formavam aquela manta. Os protagonistas
+    eram pessoas da família, um tio, uma tia, o avô, a bisavó,
+    ela mesma, os antigos donos das roupas. Um dia, a avó
+    morreu, e as tias passaram a disputar a manta, todas a
+    queriam, mais do que aos quadros, joias e palácios deixados
+    por ela. Felizmente, as tias conseguiram chegar a um
+    acordo, e a manta passou a ficar cada mês na casa de uma
+    delas. E os retalhos, à medida que iam se acabando, eram
+    substituídos por outros retalhos, e novas e antigas histórias
+    foram sendo incorporadas à manta mais valiosa do mundo.<\br>
+    LASEVICIUS, A. Língua Portuguesa, São Paulo, n. 76,
+    2012 (adaptado). <br>
+    A autora descreve a importância da manta para aquela
+    família, ao verbalizar que “novas e antigas histórias foram
+    sendo incorporadas à manta mais valiosa do mundo”.
+    Essa valorização evidencia-se pela</label>
+    
+         
+    
+          <label for="a2"><input type="radio" id="a2" name="resposta2" value="a">a) oposição entre os objetos de valor, como joias, palácios e
+    quadros, e a velha manta.</label>
+    
+          <label for="b2"><input type="radio" id="b3" name="resposta2" value="b">b) descrição detalhada dos aspectos físicos da manta, como
+    cor e tamanho dos retalhos.</label>
+    
+          <label for="c2"><input type="radio" id="c2" name="resposta2" value="c">c) valorização da manta como objeto de herança familiar
+    disputado por todos.</label>
+    
+          <label for="d2"><input type="radio" id="d2" name="resposta2" value="d">d) comparação entre a manta que protege do frio e a manta
+    que aquecia os pés das crianças.</label>
+    
+          <label for="e2"><input type="radio" id="e2" name="resposta2" value="e">e) correlação entre os retalhos da manta e as muitas
+    histórias de tradição oral que os formavam.</label>
+    
+     
+    
+          <div class="resultado" id="resultado2"></div>
+    
+        <div class="centro"><button type="button" onclick="verificarRespostasIndividual(2, 'e')">Verificar Resposta</button></div>
+    
+        </div>
+
+
+ 
+
+       <div id="pergunta3">
+
+          <label data-resposta-correta="a"> 3. (Enem 2013) Querô
+    DELEGADO — Então desce ele. Vê o que arrancam desse
+    sacana.<br>
+    SARARÁ — Só que tem um porém. Ele é menor.
+    DELEGADO — Então vai com jeito. Depois a gente
+    entrega pro juiz.<br>
+    (Luz apaga no delegado e acende no repórter, que se dirige
+    ao público.)<br>
+    REPÓRTER — E o Querô foi espremido, empilhado,
+    esmagado de corpo e alma num cubículo imundo, com
+    outros meninos. Meninos todos espremidos, empilhados,
+    esmagados de corpo e alma, alucinados pelos seus
+    desesperos, cegados por muitas aflições. Muitos meninos,
+    com seus desesperos e seus ódios, empilhados, espremidos,
+    esmagados de corpo e alma no imundo cubículo do
+    reformatório. E foi lá que o Querô cresceu.<br>
+    MARCOS, P. Melhor teatro. São Paulo: Global, 2003
+    (fragmento).<br>
+    No discurso do repórter, a repetição causa um efeito de
+    sentido de intensificação, construindo a ideia de</label>
+    
+          <label for="a3"><input type="radio" id="a3" name="resposta3" value="a">a) opressão física e moral, que gera rancor nos meninos.</label>
+    
+          <label for="b3"><input type="radio" id="b3" name="resposta3" value="b">b) repressão policial e social, que gera apatia nos meninos.</label>
+    
+          <label for="c3"><input type="radio" id="c3" name="resposta3" value="c">c) polêmica judicial e midiática, que gera confusão entre os
+    meninos.</label>
+    
+          <label for="d3"><input type="radio" id="d3" name="resposta3" value="d">d) concepção educacional e carcerária, que gera comoção
+    nos meninos.</label>
+    
+          <label for="e3"><input type="radio" id="e3" name="resposta3" value="e">e) informação crítica e jornalística, que gera indignação
+    entre os meninos.</label>
+    
+          <div class="resultado" id="resultado3"></div>
+    
+         <div class="centro"><button type="button" onclick="verificarRespostasIndividual(3, 'a')">Verificar Resposta</button></div>
+    
+        </div>
+    
+     
+    
+
+ 
+
+    <div id="pergunta4">
+
+          <label data-resposta-correta="e">4. (Enem 2013) Gripado, penso entre espirros em como a
+    palavra gripe nos chegou após uma série de contágios entre
+    línguas. Partiu da Itália em 1743 a epidemia de gripe que
+    disseminou pela Europa, além do vírus propriamente dito,
+    dois vocábulos virais: o italiano influenza e o francês
+    grippe. O primeiro era um termo derivado do latim
+    medieval influentia, que significava “influência dos astros
+    sobre os homens”. O segundo era apenas a forma nominal
+    do verbo gripper, isto é, “agarrar”. Supõe-se que fizesse
+    referência ao modo violento como o vírus se apossa do
+    organismo infectado. <br>
+    RODRIGUES, S. “Sobre palavras”. Veja, São Paulo, 30
+    nov. 2011. <br>
+    Para se entender o trecho como uma unidade de sentido, é
+    preciso que o leitor reconheça a ligação entre seus
+    elementos. Nesse texto, a coesão é construída
+    predominantemente pela retomada de um termo por outro e
+    pelo uso da elipse. O fragmento do texto em que há coesão
+    por elipse do sujeito é: </label>
+    
+            <label for="a3"><input type="radio" id="a3" name="resposta4" value="a"> a) “[…] a palavra gripe nos chegou após uma série de
+    contágios entre línguas.”</label>
+    
+            <label for="b4"><input type="radio" id="b4" name="resposta3" value="b">b) “Partiu da Itália em 1743 a epidemia de gripe […]”.</label>
+    
+            <label for="c4"><input type="radio" id="c4" name="resposta3" value="c">c) “O primeiro era um termo derivado do latim medieval
+    influentia, que significava ‘influência dos astros sobre os
+    homens’.” </label>
+    
+            <label for="d4"><input type="radio" id="d4" name="resposta3" value="d">d) “O segundo era apenas a forma nominal do verbo
+    gripper […]”. </label>
+    
+            <label for="e4"><input type="radio" id="e4" name="resposta3" value="e">e) “Supõe-se que fizesse referência ao modo violento como
+    o vírus se apossa do organismo infectado.”</label>
+    
+            <div class="resultado" id="resultado3"></div>
+    
+            <button type="button" onclick="verificarRespostasIndividual(3, 'e')">Verificar Resposta</button>
+    
+          </div>
+    
+ 
+
+        
+ 
+
+      <div id="pergunta5">
+  <label data-resposta-correta="e">5. (Enem 2013) Para Carr, internet atua no comércio
+    da distração <br>
+    Autor de “A Geração Superficial” analisa a influência da
+    tecnologia na mente<br>
+    O jornalista americano Nicholas Carr acredita que
+    a internet não estimula a inteligência de ninguém. O autor
+    explica descobertas científicas sobre o funcionamento do
+    cérebro humano e teoriza sobre a influência da internet em
+    nossa forma de pensar.<br>
+    Para ele, a rede torna o raciocínio de quem navega
+    mais raso, além de fragmentar a atenção de seus usuários.<br>
+    Mais: Carr afirma que há empresas obtendo lucro
+    com a recente fragilidade de nossa atenção. “Quanto mais
+    tempo passamos on-line e quanto mais rápido passamos de
+    uma informação para a outra, mais dinheiro as empresas de
+    internet fazem”, avalia.<br>
+    “Essas empresas estão no comércio da distração e
+    são experts em nos manter cada vez mais famintos por
+    informação fragmentada em partes pequenas. É claro que
+    elas têm interesse em nos estimular e tirar vantagem da
+    nossa compulsão por tecnologia.”<br>
+    ROXO, E. Folha de S.Paulo, 18 fev. 2012 (adaptado). <br>
+    A crítica do jornalista norte-americano que justifica o título
+    do texto é a de que a internet</label>
+    
+            </label>
+    
+            <label for="a5"><input type="radio" id="a5" name="resposta5" value="a">a) mantém os usuários cada vez menos preocupados com a
+    qualidade da informação.</label>
+    
+            <label for="b5"><input type="radio" id="b5" name="resposta5" value="b">b) torna o raciocínio de quem navega mais raso, além de
+    fragmentar a atenção de seus usuários.</label>
+    
+            <label for="c5"><input type="radio" id="c5" name="resposta5" value="c">c) desestimula a inteligência, de acordo com descobertas
+    científicas sobre o cérebro.</label>
+    
+            <label for="d5"><input type="radio" id="d5" name="resposta5" value="d">d) influencia nossa forma de pensar com a superficialidade
+    dos meios eletrônicos.</label>
+    
+            <label for="e5"><input type="radio" id="e5" name="resposta5" value="e">e) garante a empresas a obtenção de mais lucro com a
+    recente fragilidade de nossa atenção.</label>
+    
+            <div class="resultado" id="resultado5"></div>
+    
+            <button type="button" onclick="verificarRespostasIndividual(5, 'e')">Verificar Resposta</button>
+    
+            </div>
+       
+        <div id="pergunta6">
+
+            
+  <label data-resposta-correta="e">6. (Enem 2013) Secretaria de Cultura<br>
+    EDITAL<br>
+    NOTIFICAÇÃO — Síntese da resolução publicada no
+    Diário Oficial da Cidade, 29/07/2011 — página 41 — 511ª
+    Reunião Ordinária, em 21/06/2011.<br>
+    Resolução nº 08/2011 — TOMBAMENTO dos imóveis da
+    Rua Augusta, nº 349 e nº 353, esquina com a Rua Marquês
+    de Paranaguá, nº 315, nº 327 e nº 329 (Setor 010, Quadra
+    026, Lotes 0016-2 e 00170-0), bairro da Consolação,
+    Subprefeitura da Sé, conforme o processo administrativo nº
+    1991-0.005.365-1.<br>
+    Folha de S. Paulo, 5 ago. 2011 (adaptado).<br>
+    Um leitor interessado nas decisões governamentais escreve
+    uma carta para o jornal que publicou o edital, concordando
+    com a resolução sintetizada no Edital da Secretaria de
+    Cultura. Uma frase adequada para expressar sua
+    concordância é:</label>
+    
+     
+    
+                    <label for="a6"><input type="radio" id="a6" name="resposta6" value="a">a) Que sábia iniciativa! Os prédios em péssimo estado de
+    conservação devem ser derrubados.</label>
+    
+                    <label for="b6"><input type="radio" id="b6" name="resposta6" value="b">b) Até que enfim! Os edifícios localizados nesse trecho
+    descaracterizam o conjunto arquitetônico da Rua Augusta.</label>
+    
+                    <label for="c6"><input type="radio" id="c6" name="resposta6" value="c">c) Parabéns! O poder público precisa mostrar sua força
+    como guardião das tradições dos moradores locais.</label>
+    
+                    <label for="d6"><input type="radio" id="d6" name="resposta6" value="d">d) Justa decisão! O governo dá mais um passo rumo à
+    eliminação do problema da falta de moradias populares.</label>
+    
+                    <label for="e6"><input type="radio" id="e6" name="resposta6" value="e">e) Congratulações! O patrimônio histórico da cidade
+    merece todo empenho para ser preservado.</label>
+    
+                    <div class="resultado" id="resultado5"></div>
+    
+                    <button type="button" onclick="verificarRespostasIndividual(6, 'e')">Verificar Resposta</button>
+    
+                
+ 
+
+                
+            </div>
+
+            <div id="pergunta7">
+
+                
+  <label data-resposta-correta="a">7. (Enem 2013) Adolescentes: mais altos, gordos e
+    preguiçosos<br>
+    A oferta de produtos industrializados e a falta de
+    tempo têm sua parcela de responsabilidade no aumento da
+    silhueta dos jovens. ”Os nossos hábitos alimentares, de
+    modo geral, mudaram muito“, observa Vivian Ellinger,
+    presidente da Sociedade Brasileira de Endocrinologia e
+    Metabologia (SBEM), no Rio de Janeiro. Pesquisas
+    mostram que, aqui no Brasil, estamos exagerando no sal e
+    no açúcar, além de tomar pouco leite e comer menos frutas
+    e feijão.<br>
+    Outro pecado, velho conhecido de quem exibe
+    excesso de gordura por causa da gula, surge como marca da
+    nova geração: a preguiça. ”Cem por cento das meninas que
+    participam do Programa não praticavam nenhum esporte“,
+    revela a psicóloga Cristina Freire, que monitora o
+    desenvolvimento emocional das voluntárias.<br>
+    Você provavelmente já sabe quais são as
+    consequências de uma rotina sedentária e cheia de gordura.
+    ”E não é novidade que os obesos têm uma sobrevida
+    menor“, acredita Claudia Cozer, endocrinologista da
+    Associação Brasileira para o Estudo da Obesidade e da
+    Síndrome Metabólica. Mas, se há cinco anos os estudos
+    projetavam um futuro sombrio para os jovens, no cenário
+    atual as doenças que viriam na velhice já são parte da rotina
+    deles. ”Os adolescentes já estão sofrendo com hipertensão e
+    diabete“, exemplifica Claudia.<br>
+    DESGUALDO, P. Revista Saúde. Disponível em:
+    http://saude.abril.com.br. Acesso em: 28 jul. 2012
+    (adaptado).<br>
+    Sobre a relação entre os hábitos da população adolescente e
+    as suas condições de saúde, as informações apresentadas no
+    texto indicam que</label>
+    
+                    </label>
+    
+                    <label for="a7"><input type="radio" id="a7" name="resposta7" value="a">a) a falta de atividade física somada a uma alimentação
+    nutricionalmente desequilibrada constituem fatores
+    relacionados ao aparecimento de doenças crônicas entre
+    os adolescentes.</label>
+    
+                    <label for="b7"><input type="radio" id="b7" name="resposta7" value="b">b) a diminuição do consumo de alimentos fontes de
+    carboidratos combinada com um maior consumo de
+    alimentos ricos em proteínas contribuíram para o
+    aumento da obesidade entre os adolescentes.</label>
+    
+                    <label for="c7"><input type="radio" id="c7" name="resposta7" value="c">c) a maior participação dos alimentos industrializados e
+    gordurosos na dieta da população adolescente tem
+    tornado escasso o consumo de sais e açúcares, o que
+    prejudica o equilíbrio metabólico.</label>
+    
+                    <label for="d7"><input type="radio" id="d7" name="resposta7" value="d">d) a ocorrência de casos de hipertensão e diabetes entre os
+    adolescentes advém das condições de alimentação,
+    enquanto que na população adulta os fatores hereditários
+    são preponderantes.</label>
+    
+                    <label for="e7"><input type="radio" id="e7" name="resposta7" value="e">e) a prática regular de atividade física é um importante fator
+    de controle da diabetes entre a população adolescente,
+    por provocar um constante aumento da pressão arterial
+    sistólica.</label>
+    
+                    <div class="resultado" id="resultado7"></div>
+    
+                    <button type="button" onclick="verificarRespostasIndividual(7, 'a')">Verificar Resposta</button>
+    
+                   
+                
+                </div>
+
+            <div id="pergunta8">
+
+                                      <label data-resposta-correta="c">8. (Enem 2013) TEXTO I<br>
+    É evidente que a vitamina D é importante — mas
+    como obtê-la? Realmente, a vitamina D pode ser produzida
+    naturalmente pela exposição à luz do sol, mas ela também
+    existe em alguns alimentos comuns. Entretanto, como fonte
+    dessa vitamina, certos alimentos são melhores do que
+    outros. Alguns possuem uma quantidade significativa de
+    vitamina D, naturalmente, e são alimentos que talvez você
+    não queira exagerar: manteiga, nata, gema de ovo e fígado.<br>
+    Disponível em: http://saude.hsw.uol.com.br. Acesso em: 31
+    jul. 2012.<br>
+    
+    TEXTO II<br>
+    
+    Todos nós sabemos que a vitamina D
+    (colecalciferol) é crucial para sua saúde. Mas a vitamina D
+    é realmente uma vitamina? Está presente nas comidas que
+    os humanos normalmente consomem? Embora exista em
+    algum percentual na gordura do peixe, a vitamina D não
+    está em nossas dietas, a não ser que os humanos
+    artificialmente incrementem um produto alimentar, como o
+    leite enriquecido com vitamina D. A natureza planejou que
+    você a produzisse em sua pele, e não a colocasse direto em
+    sua boca.<br>
+    Então, seria a vitamina D realmente uma vitamina?
+    Disponível em: www.umaoutravisao.com.br. Acesso em:
+    31 jul. 2012.<br>
+    Frequentemente circulam na mídia textos de divulgação
+    científica que apresentam informações divergentes sobre
+    um mesmo tema. Comparando os dois textos, constata-se
+    que o Texto II contrapõe-se ao I quando</label>
+    
+                        </label>
+    
+                        <label for="a8"><input type="radio" id="a8" name="resposta8" value="a">a) comprova cientificamente que a vitamina D não é uma
+    vitamina.</label>
+    
+                        <label for="b8"><input type="radio" id="b8" name="resposta8" value="b">b) demonstra a verdadeira importância da vitamina D para a
+    saúde</label>
+    
+                        <label for="c8"><input type="radio" id="c8" name="resposta8" value="c">c) enfatiza que a vitamina D é mais comumente produzida
+    pelo corpo que absorvida por meio de alimentos.</label>
+    
+                        <label for="d8"><input type="radio" id="d8" name="resposta8"value="d">d) afirma que a vitamina D existe na gordura dos peixes e
+    no leite, não em seus derivados.</label>
+    
+                        <label for="e8"><input type="radio" id="e8" name="resposta8" value="e">e) levanta a possibilidade de o corpo humano produzir
+    artificialmente a vitamina D</label>
+    
+                        <div class="resultado" id="resultado8"></div>
+    
+                        <button type="button" onclick="verificarRespostasIndividual(8, 'c')">Verificar Resposta</button>
+    
+                    </div>
+                
+    <div id="pergunta9">
+
+                          <label data-resposta-correta="b">9. (Enem 2013) O que é bullying virtual ou
+      cyberbullying?<br>
+      É o bullying que ocorre em meios eletrônicos, com
+      mensagens difamatórias ou ameaçadoras circulando por emails, sites, blogs (os diários virtuais), redes sociais e
+      celulares. É quase uma extensão do que dizem e fazem na
+      escola, mas com o agravante de que as pessoas envolvidas
+      não estão cara a cara.<br>
+      Dessa forma, o anonimato pode aumentar a
+      crueldade dos comentários e das ameaças e os efeitos
+      podem ser tão graves ou piores. “O autor, assim como o
+      alvo, tem dificuldade de sair de seu papel e retomar valores
+      esquecidos ou formar novos”, explica Luciene Tognetta,
+      doutora em Psicologia Escolar e pesquisadora da Faculdade
+      de Educação da Universidade Estadual de Campinas
+      (Unicamp).<br>
+      Disponível em http://revistaescola.abril.com.br. Acesso em:
+      3 ago. 2012 (adaptado).<br>
+      Segundo o texto, com as tecnologias de informação e
+      comunicação, a prática do bullying ganha novas nuances de
+      perversidade e é potencializada pelo fato de</label>
+      
+                          </label>
+      
+                          <label for="a9"><input type="radio" id="a9" name="resposta9" value="a">a) atingir um grupo maior de espectadores.</label>
+      
+                          <label for="b9"><input type="radio" id="b9" name="resposta9" value="b">b) dificultar a identificação do agressor incógnito.</label>
+      
+                          <label for="c9"><input type="radio" id="c9" name="resposta9" value="c">c) impedir a retomada de valores consolidados pela vítima.</label>
+      
+                          <label for="d9"><input type="radio" id="d9" name="resposta9" value="d">d) possibilitar a participação de um número maior de
+      autores.</label>
+      
+                          <label for="e9"><input type="radio" id="e9" name="resposta9" value="e">e) proporcionar o uso de uma variedade de ferramentas da
+      internet.</label>
+      
+                          <div class="resultado" id="resultado9"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(9, 'b')">Verificar Resposta</button>
+      
+                      </div>
+               
+                  
+
+                
+  <div id="pergunta10">
+
+                        <label data-resposta-correta="d">10. (Enem 2013) Novas tecnologias<\br>
+    Atualmente, prevalece na mídia um discurso de
+    exaltação das novas tecnologias, principalmente aquelas
+    ligadas às atividades de telecomunicações. Expressões
+    frequentes como “o futuro já chegou”, “maravilhas
+    tecnológicas” e “conexão total com o mundo” “fetichizam”
+    novos produtos, transformando-os em objetos do desejo, de
+    consumo obrigatório. Por esse motivo carregamos hoje nos
+    bolsos, bolsas e mochilas o “futuro” tão festejado.<\br>
+    Todavia, não podemos reduzir-nos a meras vítimas
+    de um aparelho midiático perverso, ou de um aparelho
+    capitalista controlador. Há perversão, certamente, e
+    controle, sem sombra de dúvida. Entretanto, desenvolvemos
+    uma relação simbiótica de dependência mútua com os
+    veículos de comunicação, que se estreita a cada imagem
+    compartilhada e a cada dossiê pessoal transformado em
+    objeto público de entretenimento.<br>
+    Não mais como aqueles acorrentados na caverna
+    de Platão, somos livres para nos aprisionar, por espontânea
+    vontade, a esta relação sadomasoquista com as estruturas
+    midiáticas, na qual tanto controlamos quanto somos
+    controlados.<br>
+    SAMPAIO, A. S. “A microfísica do espetáculo”.
+    Disponível em: http://observatoriodaimprensa.com.br.
+    Acesso em: 1 mar. 2013 (adaptado).<br>
+    Ao escrever um artigo de opinião, o produtor precisa criar
+    uma base de orientação linguística que permita alcançar os
+    leitores e convencê-los com relação ao ponto de vista
+    defendido. Diante disso, nesse texto, a escolha das formas
+    verbais em destaque objetiva</label>
+    
+                        </label>
+    
+                        <label for="a10"><input type="radio" id="a10" name="resposta10" value="a">a) criar relação de subordinação entre leitor e autor, já que
+    ambos usam as novas tecnologias.</label>
+    
+                        <label for="b10"><input type="radio" id="b10" name="resposta10" value="b">b) enfatizar a probabilidade de que toda população
+    brasileira esteja aprisionada às novas tecnologias.</label>
+    
+                        <label for="c10"><input type="radio" id="c10" name="resposta10" value="c">c) indicar, de forma clara, o ponto de vista de que hoje as
+    pessoas são controladas pelas novas tecnologias.</label>
+    
+                        <label for="d10"><input type="radio" id="d10" name="resposta10" value="d">d) tornar o leitor copartícipe do ponto de vista de que ele
+    manipula as novas tecnologias e por elas é manipulado</label>
+    
+                        <label for="e10"><input type="radio" id="e10" name="resposta10" value="e">e) demonstrar ao leitor sua parcela de responsabilidade por
+    deixar que as novas tecnologias controlem as pessoas.</label>
+    
+                        <div class="resultado" id="resultado10"></div>
+    
+                        <button type="button" onclick="verificarRespostasIndividual(10, 'd')">Verificar Resposta</button>
+    
+                    </div>
+    
+                    <div id="pergunta11">
+    
+                        <label data-resposta-correta="e">11. (Enem 2013) Na verdade, o que se chama
+    genericamente de índios é um grupo de mais de trezentos
+    povos que, juntos, falam mais de 180 línguas diferentes.
+    Cada um desses povos possui diferentes histórias, lendas,
+    tradições, conceitos e olhares sobre a vida, sobre a
+    liberdade, sobre o tempo e sobre a natureza. Em comum,
+    tais comunidades apresentam a profunda comunhão com o
+    ambiente em que vivem, o respeito em relação aos
+    indivíduos mais velhos, a preocupação com as futurasgerações, e o senso de que a felicidade individual depende
+    do êxito do grupo. Para eles, o sucesso é resultado de uma
+    construção coletiva. Estas ideias, partilhadas pelos povos
+    indígenas, são indispensáveis para construir qualquer noção
+    moderna de civilização. Os verdadeiros representantes do
+    atraso no nosso país não são os índios, mas aqueles que se
+    pautam por visões preconceituosas e ultrapassadas de
+    “progresso”.<br>
+    AZZI, R. “As razões de ser guarani-kaiowá”. Disponível
+    em: www.outraspalavras.net. Acesso em: 7 dez. 2012.<br>
+    Considerando-se as informações abordadas no texto, ao
+    iniciá-lo com a expressão “Na verdade”, o autor tem como
+    objetivo principal</label>
+    
+ 
+
+       <label for="a11"><input type="radio" id="a11" name="resposta11" value="a">a) expor as características comuns entre os povos indígenas
+      no Brasil e suas ideias modernas e civilizadas.</label>
+      
+                          <label for="b11"><input type="radio" id="b11" name="resposta11" value="b">b) trazer uma abordagem inédita sobre os povos indígenas
+      no Brasil e, assim, ser reconhecido como especialista no
+      assunto.</label>
+      
+                          <label for="c11"><input type="radio" id="c11" name="resposta11" value="c">c) mostrar os povos indígenas vivendo em comunhão com a
+      natureza, e, por isso, sugerir que se deve respeitar o meio
+      ambiente e esses povos.</label>
+      
+                          <label for="d11"><input type="radio" id="d11" name="resposta11" value="d">d) usar a conhecida oposição entre moderno e antigo como
+      uma forma de respeitar a maneira ultrapassada como
+      vivem os povos indígenas em diferentes regiões do
+      Brasil.</label>
+      
+                          <label for="e11"><input type="radio" id="e11" name="resposta11" value="e">e) apresentar informações pouco divulgadas a respeito dos
+      indígenas no Brasil, para defender o caráter desses povos
+      como civilizações, em contraposição a visões
+      preconcebidas.</label>
+      
+                          <div class="resultado" id="resultado11"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(11, 'e')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta12">
+      
+                          <label data-resposta-correta="d">12. (Enem 2013) Futebol: “A rebeldia é que muda o
+      mundo”<br>
+      Conheça a história de Afonsinho, o primeiro jogador do
+      futebol brasileiro a derrotar a cartolagem e a conquistar o
+      Passe Livre, há exatos 40 anos<br>
+      Pelé estava se aposentando pra valer pela primeira
+      vez, então com a camisa do Santos (porque depois voltaria
+      a atuar pelo New York Cosmos, dos Estados Unidos), em
+      1972, quando foi questionado se, finalmente, sentia-se um
+      homem livre. O Rei respondeu sem titubear:<br>
+      — Homem livre no futebol só conheço um: o
+      Afonsinho. Este sim pode dizer, usando as suas palavras,
+      que deu o grito de independência ou morte. Ninguém mais.
+      O resto é conversa.<br>
+      Apesar de suas declarações serem motivo de
+      chacota por parte da mídia futebolística e até dos torcedores
+      brasileiros, o Atleta do Século acertou. E provavelmente
+      acertaria novamente hoje.<br>
+      Pela admiração por um de seus colegas de clube
+      daquele ano. Pelo reconhecimento do caráter e
+      personalidade de um dos jogadores mais contestadores do
+      futebol nacional. E principalmente em razão da história de
+      luta — e vitória — de Afonsinho sobre os cartolas.<br>
+      
+      ANDREUCCI, R. Disponível em:
+      http://carosamigos.terra.com.br. Acesso em: 19 ago. 2011.<br>
+      O autor utiliza marcas linguísticas que dão ao texto um
+      caráter informal. Uma dessas marcas é identificada em:</label>
+      
+                          </label>
+      
+                          <label for="a12"><input type="radio" id="a12" name="resposta12" value="a"> a) “[...] o Atleta do Século acertou.”</label>
+      
+                          <label for="b12"><input type="radio" id="b12" name="resposta12" value="b">b) “O Rei respondeu sem titubear [...]”.</label>
+      
+                          <label for="c12"><input type="radio" id="c12" name="resposta12" value="c">c) “E provavelmente acertaria novamente hoje.”</label>
+      
+                          <label for="d12"><input type="radio" id="d12" name="resposta12" value="d">d) “Pelé estava se aposentando pra valer pela primeira vez
+      [...]”. </label>
+      
+                          <label for="e12"><input type="radio" id="e12" name="resposta12" value="e">e) “Pela admiração por um de seus colegas de clube
+      daquele ano.”</label>
+      
+                          <div class="resultado" id="resultado12"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(12, 'd')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta13">
+      
+                          <label data-resposta-correta="e">13. (Enem 2013) O bit na galáxia de Gutenberg<br>
+      Neste século, a escrita divide terreno com diversos
+      meios de comunicação. Essa questão nos faz pensar na
+      necessidade da “imbricação, na coexistência e interpretação
+      recíproca dos diversos circuitos de produção e difusão do
+      saber...”.<br>
+      É necessário relativizar nossa postura frente às
+      modernas tecnologias, principalmente à informática. Ela é
+      um campo novidativo, sem dúvida, mas suas bases estão
+      nos modelos informativos anteriores, inclusive, na tradição
+      oral e na capacidade natural de simular mentalmente os
+      acontecimentos do mundo e antecipar as consequências de
+      nossos atos. A impressão é a matriz que deflagrou todo esse
+      processo comunicacional eletrônico. Enfatizo, assim, o
+      parentesco que há entre o computador e os outros meios de
+      comunicação, principalmente a escrita, uma visão da
+      informática como um “desdobramento daquilo que a
+      produção literária impressa e, anteriormente, a tradição oral
+      já traziam consigo”.<br>
+      NEITZEL. L. C. Disponível em: www.geocities.com.
+      Acesso em: 1 ago. 2012 (adaptado).<br>
+      Ao tecer considerações sobre as tecnologias da
+      contemporaneidade e os meios de comunicação do passado,
+      esse texto concebe que a escrita contribui para uma
+      evolução das novas tecnologias por</label>
+      
+                          </label>
+      
+                          <label for="a13"><input type="radio" id="a13" name="resposta13" value="a">a) se desenvolver paralelamente nos meios tradicionais de
+      comunicação e informação.</label>
+      
+                          <label for="b13"><input type="radio" id="b13" name="resposta13" value="b">b) cumprir função essencial na contemporaneidade por
+      meio das impressões em papel.</label>
+      
+                          <label for="c13"><input type="radio" id="c13" name="resposta13" value="c">c) realizar transição relevante da tradição oral para o
+      progresso das sociedades humanas.</label>
+      
+                          <label for="d13"><input type="radio" id="d13" name="resposta13" value="d">d) oferecer melhoria sistemática do padrão de vida e do
+      desenvolvimento social humano.</label>
+      
+                          <label for="e13"><input type="radio" id="e13" name="resposta13" value="e">e) fornecer base essencial para o progresso das tecnologias
+      de comunicação e informação.</label>
+      
+                          <div class="resultado" id="resultado13"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(13, 'e')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta14">
+      
+                          <label data-resposta-correta="c">14. (Enem 2013) O hipertexto permite — ou, de certo
+      modo, em alguns casos, até mesmo exige — a participação
+      de diversos autores na sua construção, a redefinição dos
+      papéis de autor e leitor e a revisão dos modelos tradicionais
+      de leitura e de escrita. Por seu enorme potencial para se
+      estabelecerem conexões, ele facilita o desenvolvimento de
+      trabalhos coletivamente, o estabelecimento da comunicação
+      e a aquisição de informação de maneira cooperativa.<br>
+      Embora haja quem identifique o hipertexto exclusivamente
+      com os textos eletrônicos, produzidos em determinado tipo
+      de meio ou de tecnologia, ele não deve ser limitado a isso,
+      já que consiste numa forma organizacional que tanto pode
+      ser concebida para o papel como para os ambientes digitais.
+      É claro que o texto virtual permite concretizar certos
+      aspectos que, no papel, são praticamente inviáveis: a
+      conexão imediata, a comparação de trechos de textos na
+      mesma tela, o “mergulho” nos diversos aprofundamentos
+      de um tema, como se o texto tivesse camadas, dimensões
+      ou planos.<br>
+      RAMAL, A. C. Educação na cibercultura:
+      hipertextualidade, leitura, escrita e aprendizagem. Porto
+      Alegre: Artmed, 2002.<br>
+      Considerando-se a linguagem específica de cada sistema de
+      comunicação, como rádio, jornal, TV, internet, segundo o
+      texto, a hipertextualidade configura-se como um(a)</label>
+      
+                          </label>
+      
+                          <label for="a14"><input type="radio" id="a14" name="resposta14" value="a">a) elemento originário dos textos eletrônicos.</label>
+      
+                          <label for="b14"><input type="radio" id="b14" name="resposta14" value="b">b) conexão imediata e reduzida ao texto digital.</label>
+      
+                          <label for="c14"><input type="radio" id="c14" name="resposta14" value="c">c) novo modo de leitura e de organização da escrita.</label>
+      
+                          <label for="d14"><input type="radio" id="d14" name="resposta14" value="d">d) estratégia de manutenção do papel do leitor com perfil
+      definido.</label>
+      
+                          <label for="e14"><input type="radio" id="e14" name="resposta14" value="e">e) modelo de leitura baseado nas informações da superfície
+      do texto.</label>
+      
+                          <div class="resultado" id="resultado14"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(14, 'c')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta15">
+      
+                          <label data-resposta-correta="b">15. (Enem 2013) Art. 2º Considera-se criança, para os
+      efeitos desta Lei, a pessoa até doze anos de idade
+      incompletos, e adolescente aquela entre doze e dezoito anos
+      de idade. [...]<br>
+      Art. 3º A criança e o adolescente gozam de todos os
+      direitos fundamentais inerentes à pessoa humana, sem
+      prejuízo da proteção integral de que trata esta Lei,
+      assegurando-se-lhes, por lei ou por outros meios, todas as
+      oportunidades e facilidades, a fim de lhes facultar o
+      desenvolvimento físico, mental, moral, espiritual e social,
+      em condições de liberdade e de dignidade.<br>
+      Art. 4º É dever da família, da comunidade, da sociedade
+      em geral e do poder público assegurar, com absoluta
+      prioridade, a efetivação dos direitos referentes à vida, à
+      saúde, à alimentação, à educação, ao esporte, ao lazer, à
+      profissionalização, à cultura, à dignidade, ao respeito, à
+      liberdade e à convivência familiar e comunitária. [...]<br>
+      BRASIL. Lei n. 8069, de 13 de julho de 1990. “Estatuto da
+      criança e do adolescente”. Disponível em:
+      www.planalto.gov.br (fragmento).<br>
+      Para cumprir sua função social, o Estatuto da criança e do
+      adolescente apresenta características próprias desse gênero
+      quanto ao uso da língua e quanto à composição textual.
+      Entre essas características, destaca-se o emprego de</label>
+      
+                          </label>
+      
+                          <label for="a15"><input type="radio" id="a15" name="resposta15" value="a">a) repetição vocabular para facilitar o entendimento.</label>
+      
+                          <label for="b15"><input type="radio" id="b15" name="resposta15" value="b">b) palavras e construções que evitem ambiguidade.</label>
+      
+                          <label for="c15"><input type="radio" id="c15" name="resposta15" value="c">c) expressões informais para apresentar os direitos.</label>
+      
+                          <label for="d15"><input type="radio" id="d15" name="resposta15" value="d">d) frases na ordem direta para apresentar as informações
+      mais relevantes.</label>
+      
+                          <label for="e15"><input type="radio" id="e15" name="resposta15" value="e">e) exemplificações que auxiliem a compreensão dos
+      conceitos formulados</label>
+      
+                          <div class="resultado" id="resultado15"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(15, 'b')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta16">
+      
+                          <label data-resposta-correta="c">16. (Enem 2013) Dúvida<br>
+      Dois comprades viajavam de carro por uma
+      estrada de fazenda quando um bicho cruzou a frente do
+      carro.<br>
+      Um dos compadres falou:<br>
+      — Passou um largato ali!<br>
+      O outro perguntou:<br>
+      — Lagarto ou largato?<br>
+      O primeiro respondeu:<br>
+      — Num sei não, o bicho passou muito rápido.<br>
+      Piadas coloridas. Rio de Janeiro: Gênero, 2006.<br>
+      Na piada, a quebra de expectativa contribui para produzir o
+      efeito de humor. Esse efeito ocorre porque um dos
+      personagens</label>
+      
+                          </label>
+      
+                          <label for="a16"><input type="radio" id="a16" name="resposta16" value="a"> a) reconhece a espécie do animal avistado.</label>
+      
+                          <label for="b16"><input type="radio" id="b16" name="resposta16" value="b"> b) tem dúvida sobre a pronúncia do nome do réptil.</label>
+      
+                          <label for="c16"><input type="radio" id="c16" name="resposta16" value="c"> c) desconsidera o conteúdo linguístico da pergunta.</label>
+      
+                          <label for="d16"><input type="radio" id="d16" name="resposta16" value="d"> d) constata o fato de um bicho cruzar a frente do carro.</label>
+      
+                          <label for="e16"><input type="radio" id="e16" name="resposta16" value="e">e) apresenta duas possibilidades de sentido para a mesma
+      palavra.</label>
+      
+                          <div class="resultado" id="resultado16"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(16, 'c')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      <div id="pergunta17">
+      
+                          <label data-resposta-correta="a">17. (Enem 2012) Aquele bêbado
+      — Juro nunca mais beber — e fez o sinal da cruz com os
+      indicadores. Acrescentou: — Álcool.<br>
+      O mais, ele achou que podia beber. Bebia paisagens,
+      músicas de Tom Jobim, versos de Mário Quintana. Tomou
+      um pileque de Segall. Nos fins de semana embebedava-se
+      de Índia Reclinada, de Celso Antônio.<br>
+      — Curou-se 100% de vício — comentavam os amigos.
+      Só ele sabia que andava bêbado que nem um gambá.
+      Morreu de etilismo abstrato, no meio de uma carraspana de
+      pôr do sol no Leblon, e seu féretro ostentava inúmeras
+      coroas de ex-alcoólatras anônimos.<br>
+      ANDRADE, C. D. Contos plausíveis. Rio de Janeiro:
+      Record, 1991.<br>
+      A causa mortis do personagem, expressa no último
+      parágrafo, adquire um efeito irônico no texto porque, ao
+      longo da narrativa, ocorre uma</label>
+      
+                          </label>
+      
+                          <label for="a17"><input type="radio" id="a17" name="resposta17" value="a">a) metaforização do sentido literal do verbo “beber”.</label>
+      
+                          <label for="b17"><input type="radio" id="b17" name="resposta17" value="b">b) aproximação exagerada da estética abstracionista.</label>
+      
+                          <label for="c17"><input type="radio" id="c17" name="resposta17" value="c">c) apresentação gradativa da coloquialidade da linguagem</label>
+      
+                          <label for="d17"><input type="radio" id="d17" name="resposta17" value="d">d) exploração hiperbólica da expressão “inúmeras coroas”</label>
+      
+                          <label for="e17"><input type="radio" id="e17" name="resposta17" value="e">e) citação aleatória de nomes de diferentes artistas.</label>
+      
+                          <div class="resultado" id="resultado17"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(17, 'a')">Verificar Resposta</button>
+      
+                      </div>
+      
+                      
+      
+                      <div id="pergunta18">
+      
+                      <label data-resposta-correta="e">18. (Enem 2012) Cabeludinho<br>
+      Quando a Vó me recebeu nas férias, ela me apresentou aos
+      amigos: Este é meu neto. Ele foi estudar no Rio e voltou de
+      ateu. Ela disse que eu voltei de ateu. Aquela preposição
+      deslocada me fantasiava de ateu. Como quem dissesse no
+      Carnaval: aquele menino está fantasiado de palhaço. Minha
+      avó entendia de regências verbais. Ela falava de sério. Mas
+      todo-mundo riu. Porque aquela preposição deslocada podia
+      fazer de uma informação um chiste. E fez. E mais: eu acho
+      que buscar a beleza nas palavras é uma solenidade de amor.
+      E pode ser instrumento de rir. De outra feita, no meio da
+      pelada um menino gritou: Disilimina esse, Cabeludinho. Eu
+      não disilimei ninguém. Mas aquele verbo novo trouxe um
+      perfume de poesia a nossa quadra. Aprendi nessas férias a
+      brincar de palavras mais do que trabalhar com elas.
+      Comecei a não gostar de palavra engavetada. Aquela que
+      não pode mudar de lugar. Aprendi a gostar mais das
+      palavras pelo que elas entoam do que pelo que elas
+      informam. Por depois ouvi um vaqueiro a cantar com
+      saudade: Ai morena, não me escreve / que eu não sei a ler.
+      Aquele a preposto ao verbo ler, ao meu ouvir, ampliava a
+      solidão do vaqueiro.<br>
+      BARROS, M. Memórias inventadas: a infância. São Paulo:
+      Planeta, 2003.<br>
+      No texto, o autor desenvolve uma reflexão sobre diferentes
+      possibilidades de uso da língua e sobre os sentidos que
+      esses usos podem produzir, a exemplo das expressões
+      “voltou de ateu”, “desilimina esse” e “eu não sei a ler”.
+      Com essa reflexão, o autor destaca</label>
+      
+                          </label>
+      
+                          <label for="a18"><input type="radio" id="a18" name="resposta18" value="a">a) os desvios linguísticos cometidos pelos personagens do
+      texto.</label>
+      
+                          <label for="b18"><input type="radio" id="b18" name="resposta18" value="b">b) a importância de certos fenômenos gramaticais para o
+      conhecimento da língua portuguesa.</label>
+      
+                          <label for="c18"><input type="radio" id="c18" name="resposta18" value="c">c) a distinção clara entre a norma culta e as outras
+      variedades linguísticas.</label>
+      
+                          <label for="d18"><input type="radio" id="d18" name="resposta18" value="d">d) o relato fiel de episódios vividos por Cabeludinho
+      durante as suas férias.</label>
+      
+                          <label for="e18"><input type="radio" id="e18" name="resposta18" value="e">e) a valorização da dimensão lúdica e poética presente nos
+      usos coloquiais da linguagem.</label>
+      
+                          <div class="resultado" id="resultado18"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(18, 'e')">Verificar Resposta</button>
+      
+                      </div>
+      <div id="pergunta19">
+      
+                      <label data-resposta-correta="a">19. (Enem 2012) Leia.<br>
+      O senho<br>
+      Carta a uma jovem que, estando em uma roda em
+      que dava aos presentes o tratamento de você, se dirigiu ao
+      autor chamando-o “o senhor”:<br>
+      Senhora:<br>
+      Aquele a quem chamastes senhor aqui está, de
+      peito magoado e cara triste, para vos dizer que senhor ele
+      não é, de nada, nem de ninguém.<br>
+      Bem o sabeis, por certo, que a única nobreza do
+      plebeu está em não querer esconder sua condição, e esta
+      nobreza tenho eu. Assim, se entre tantos senhores ricos e
+      nobres a quem chamáveis você escolhestes a mim para
+      tratar de senhor, e bem de ver que só poderíeis ter
+      encontrado essa senhoria nas rugas de minha testa e na
+      prata de meus cabelos. Senhor de muitos anos, eis aí; o
+      território onde eu mando é no país do tempo que foi. Essa
+      palavra “senhor”, no meio de uma frase, ergueu entre nós
+      um muro frio e triste.<br>
+      Vi o muro e calei: não é de muito, eu juro, que me
+      acontece essa tristeza; mas também não era a vez primeira.<br>
+      BRAGA, R. A borboleta amarela. Rio de Janeiro: Record,
+      1991.<br>
+      A escolha do tratamento que se queira atribuir a alguém
+      geralmente considera as situações específicas de uso social.
+      A violação desse princípio causou um mal-estar no autor da
+      carta. O trecho que descreve essa violação é:</label>
+      
+                          </label>
+      
+                          <label for="a19"><input type="radio" id="a19" name="resposta19" value="a"> a) “Essa palavra, ‘senhor’, no meio de uma frase ergueu
+      entre nós um muro frio e triste”. </label>
+      
+                          <label for="b19"><input type="radio" id="b19" name="resposta19"  value="b">b) “A única nobreza do plebeu está em não querer esconder
+      a sua condição”. </label>
+      
+                          <label for="c19"><input type="radio" id="c19" name="resposta19"  value="c">c) “Só poderíeis ter encontrado essa senhoria nas rugas de
+      minha testa”. </label>
+      
+                          <label for="d19"><input type="radio" id="d19" name="resposta19"  value="d">d) “O território onde eu mando é no país do tempo que foi”.</label>
+      
+                          <label for="e19"><input type="radio" id="e19" name="resposta19" value="e">e) “Não é de muito, eu juro, que acontece essa tristeza; mas
+      também não era a vez primeira”.  </label>
+      
+                          <div class="resultado" id="resultado19"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(19, 'a')">Verificar Resposta</button>
+      
+                      </div>
+                      
+                      <div id="pergunta20">
+      
+                      <label data-resposta-correta="a">20. (Enem 2012) E como manejava bem os cordéis de seus
+      títeres, ou ele mesmo, títere voluntário e consciente, como
+      entregava o braço, as pernas, a cabeça, o tronco, como se
+      desfazia de suas articulações e de seus reflexos quando
+      achava nisso conveniência. Também ele soubera apoderarse dessa arte, mais artifício, toda feita de sutilezas e
+      grosserias, de expectativa e oportunidade, de insônia e
+      submissão, de silêncios e rompantes, de anulação e
+      prepotência. Conhecia a palavra exata para o momento
+      preciso, a frase picante ou obscena no ambiente adequado,
+      o tom humilde diante do superior útil, o grosseiro diante do
+      inferior, o arrogante quando o poderoso em nada o podia
+      prejudicar. Sabia desfazer situações equivocadas, e armar
+      intrigas das quais se saía sempre bem, e sabia, por
+      experiência própria, que a fortuna se ganha com uma frase,
+      num dado momento, que este momento único,
+      irrecuperável, irreversível, exige um estado de alerta para
+      sua apropriação.<br>
+      RAWET, S. O aprendizado. In: Diálogo. Rio de janeiro:
+      GRD, 1963 (fragmentado). <br>
+      No conto, o autor retrata criticamente a habilidade do
+      personagem no manejo de discursos diferentes segundos a
+      posição do interlocutor na sociedade. A crítica à conduta do
+      personagem está centrada</label>
+      
+                          </label>
+      
+                          <label for="a20"><input type="radio" id="a20" name="resposta20" value="a"> a) Na imagem do títere ou fantoche em que o personagem
+      acaba por se transformar, acreditando dominar os jogos
+      de poder na linguagem.</label>
+      
+                          <label for="b20"><input type="radio" id="b20" name="resposta20"  value="b">b) Na alusão à falta de articulações e reflexos do
+      personagem, dando a entender que ele não possui o
+      manejo dos jogos discursivos em todas as situações.</label>
+      
+                          <label for="c20"><input type="radio" id="c20" name="resposta20"  value="c">c) No comentário, feito em tom de censura pelo autor, sobre
+      as frases obscenas que o personagem emite em
+      determinados ambientes sociais.</label>
+      
+                          <label for="d20"><input type="radio" id="d20" name="resposta20"  value="d">d) Nas expressões que mostram tons opostos nos discursos
+      empregados aleatoriamente pelo personagem em
+      conversas com interlocutores variados.</label>
+      
+                          <label for="e20"><input type="radio" id="e20" name="resposta20" value="e">e) No falso elogio à originalidade atribuída a esse
+      personagem, responsável por seu sucesso no aprendizado
+      das regras de linguagem da sociedade.</label>
+      
+                          <div class="resultado" id="resultado20"></div>
+      
+                          <button type="button" onclick="verificarRespostasIndividual(20, 'a')">Verificar Resposta</button>
+      
+                      </div>
+      
+          <!-- Adicione mais perguntas conforme necessário -->
+      
+       
+      
+          <button id="ir" type="button" onclick="verificarRespostas()">Enviar Respostas</button>
+      
+        </form>
+      
+       
+      
+        <script>
+      
+          function verificarRespostas() {
+      
+            verificarRespostasIndividual(1, "c");
+      
+            verificarRespostasIndividual(2, "e");
+      
+            verificarRespostasIndividual(3, "a");
+      
+            verificarRespostasIndividual(4, "e");
+      
+            verificarRespostasIndividual(5, "e");
+      
+            verificarRespostasIndividual(6, "e");
+      
+            verificarRespostasIndividual(7, "a");
+      
+            verificarRespostasIndividual(8, "c");
+      
+            verificarRespostasIndividual(9, "b");
+      
+            verificarRespostasIndividual(10, "d");
+      
+            verificarRespostasIndividual(11, "e");
+      
+            verificarRespostasIndividual(12, "d");
+      
+            verificarRespostasIndividual(13, "e");
+      
+            verificarRespostasIndividual(14, "c");
+      
+            verificarRespostasIndividual(15, "b");
+      
+            verificarRespostasIndividual(16, "c");
+      
+            verificarRespostasIndividual(17, "a");
+      
+            verificarRespostasIndividual(18, "e");
+      
+            verificarRespostasIndividual(19, "a");
+      
+            verificarRespostasIndividual(20, "a");
+      
+            // Adicione chamadas para mais perguntas conforme necessário
+      
+          }
+ 
+    function verificarRespostasIndividual(pergunta, respostaCorreta) {
+      const respostaSelecionada = document.querySelector(`input[name="resposta${pergunta}"]:checked`);
+      const resultadoElement = document.getElementById(`resultado${pergunta}`);
+ 
+      if (!respostaSelecionada) {
+        resultadoElement.textContent = "Por favor, preencha todas as respostas.";
+        resultadoElement.className = "resposta-incorreta";
+        return;
+      }
+ 
+      const respostaSelecionadaValue = respostaSelecionada.value;
+ 
+      if (respostaSelecionadaValue === respostaCorreta) {
+        resultadoElement.textContent = `Parabéns! A resposta está correta.`;
+        resultadoElement.className = "resposta-correta";
+      } else {
+        resultadoElement.textContent = `Infelizmente, a resposta está incorreta.`;
+        resultadoElement.className = "resposta-incorreta";
+      }
+    }
+  </script>
+ 
+</body>
+</html>
+ 
+ 
+ 
